@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tscott0</title>
+    <link>https://tscott0.github.io/index.xml</link>
+    <description>Recent content on tscott0</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 25 Feb 2017 13:51:09 +0000</lastBuildDate>
+    <atom:link href="https://tscott0.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hello Hugo!</title>
+      <link>https://tscott0.github.io/post/hello-hugo/</link>
+      <pubDate>Sat, 25 Feb 2017 13:51:09 +0000</pubDate>
+      
+      <guid>https://tscott0.github.io/post/hello-hugo/</guid>
+      <description>&lt;p&gt;Playing with &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; and decided to start a blog. Nothing to see here, move along.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
