@@ -9,7 +9,7 @@
   <title>Configuring Hugo</title>
   
   <meta name="author" content="Tom Scott"/>
-  <meta name="generator" content="Hugo 0.18.1" />
+  <meta name="generator" content="Hugo 0.40.1" />
   
 
   <link rel="alternate" href="https://tscott0.github.io/index.xml" type="application/rss+xml" title="tscott0">
@@ -130,49 +130,37 @@ I&rsquo;m looking for a blog that&hellip;</p>
 <h2 id="installing-pygments">Installing Pygments</h2>
 
 <p><em>Assuming Pip is installed</em></p>
-<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span></span>$ sudo pip install Pygments
-</pre></div>
-
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo pip install Pygments</code></pre></div>
 <p>Check that <code>pygmentize</code> is on the path (<code>Ctrl-C</code> to exit)
-<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span></span>$ pygmentize
-</pre></div>
-</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ pygmentize</code></pre></div></p>
 
 <h2 id="configuring-pygments">Configuring Pygments</h2>
 
 <p>I added the following to my config.toml</p>
-<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span></span><span style="color: #60a0b0; font-style: italic"># Use Pygments when using traditional code fences with ```</span>
-<span style="color: #4070a0">PygmentsCodeFences</span> <span style="color: #666666">=</span> <span style="color: #4070a0">true</span>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#60a0b0;font-style:italic"># Use Pygments when using traditional code fences with ```</span>
+<span style="color:#4070a0">PygmentsCodeFences</span> <span style="color:#666">=</span> <span style="color:#4070a0">true</span>
 
-<span style="color: #60a0b0; font-style: italic"># The Pygments theme</span>
-<span style="color: #4070a0">PygmentsStyle</span> <span style="color: #666666">=</span> <span style="color: #4070a0">&quot;friendly&quot;</span>
-</pre></div>
-
+<span style="color:#60a0b0;font-style:italic"># The Pygments theme</span>
+<span style="color:#4070a0">PygmentsStyle</span> <span style="color:#666">=</span> <span style="color:#4070a0">&#34;friendly&#34;</span></code></pre></div>
 <h2 id="examples">Examples</h2>
 
 <h3 id="css">CSS</h3>
-<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span></span><span style="color: #062873; font-weight: bold">body</span> {
-  <span style="color: #007020; font-weight: bold">font-family</span>: <span style="color: #4070a0">&quot;Noto Sans&quot;</span>, <span style="color: #007020; font-weight: bold">sans-serif</span>;
-}
-</pre></div>
-
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#062873;font-weight:bold">body</span> {
+  <span style="color:#007020;font-weight:bold">font-family</span>: <span style="color:#4070a0">&#34;Noto Sans&#34;</span>, <span style="color:#007020;font-weight:bold">sans-serif</span>;
+}</code></pre></div>
 <h3 id="go-with-line-numbers">Go with line numbers</h3>
 
-<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span></span><span style="background-color: #f0f0f0; padding: 0 5px 0 5px">1 </span><span style="color: #007020; font-weight: bold">func</span> (b <span style="color: #666666">*</span>Band) String() <span style="color: #902000">string</span> {
-<span style="background-color: #f0f0f0; padding: 0 5px 0 5px">2 </span>	<span style="color: #007020; font-weight: bold">return</span> fmt.Sprintf(<span style="color: #4070a0">&quot;%v&quot;</span>, <span style="color: #666666">*</span>b)
-<span style="background-color: #f0f0f0; padding: 0 5px 0 5px">3 </span>}
-</pre></div>
-
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#007020;font-weight:bold">func</span> (b <span style="color:#666">*</span>Band) String() <span style="color:#902000">string</span> {
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>	<span style="color:#007020;font-weight:bold">return</span> fmt.Sprintf(<span style="color:#4070a0">&#34;%v&#34;</span>, <span style="color:#666">*</span>b)
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span>}</code></pre></div>
 
 <h3 id="markdown-with-line-3-highlighted">Markdown with line 3 highlighted</h3>
 
-<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">#</span> How to ride a bike
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md"><span style="color:#000080;font-weight:bold">#</span> How to ride a bike
 
-<span style="background-color: #ffffcc"><span style="color: #007020; font-weight: bold">-</span> Get on top of the bike.
-</span><span style="color: #007020; font-weight: bold">-</span> Put your feet on the pedal.
-<span style="color: #007020; font-weight: bold">-</span> Make the pedal turn.
-</pre></div>
-
+<span style="display:block;width:100%;background-color:#d8d8d8"><span style="color:#007020;font-weight:bold">-</span> Get on top of the bike.<span style="">
+</span></span><span style=""></span><span style="color:#007020;font-weight:bold">-</span> Put your feet on the pedal.<span style="">
+</span><span style=""></span>- Make the pedal turn.</code></pre></div>
 
 <h1 id="summaries">Summaries</h1>
 
@@ -187,11 +175,9 @@ I&rsquo;m looking for a blog that&hellip;</p>
 <li>Inserting <code>&lt;!--more--&gt;</code> into a post will allow me to manually define the split, just what I was looking for.</li>
 </ol>
 
-<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span></span>This is the summary.
-<span style="color: #60a0b0; font-style: italic">&lt;!--more--&gt;</span>
-This is the body of the post.
-</pre></div>
-
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">This is the summary.
+<span style="color:#60a0b0;font-style:italic">&lt;!--more--&gt;</span>
+This is the body of the post.</code></pre></div>
 
 <h1 id="css-1">CSS</h1>
 
@@ -250,6 +236,15 @@ This is the body of the post.
           </li>
           
 		      
+          <li>
+            <a href="https://linkedin.com/in/tomscottprofile" title="LinkedIn">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
 	    	  
           
            
@@ -279,7 +274,7 @@ This is the body of the post.
   	    </p>
   	    
     	<p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.18.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          <a href="http://gohugo.io">Hugo v0.40.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
           
     	</p>
       </div>

@@ -2,161 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tscott0</title>
-    <link>https://tscott0.github.io/index.xml</link>
+    <link>https://tscott0.github.io/</link>
     <description>Recent content on tscott0</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <managingEditor>tomscott87@gmail.com (Tom Scott)</managingEditor>
     <webMaster>tomscott87@gmail.com (Tom Scott)</webMaster>
-    <lastBuildDate>Mon, 27 Feb 2017 14:16:24 +0200</lastBuildDate>
-    <atom:link href="https://tscott0.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Feb 2017 10:54:24 +0200</lastBuildDate>
+    
+	<atom:link href="https://tscott0.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Hugo Repositories</title>
       <link>https://tscott0.github.io/post/hugo-repositories/</link>
-      <pubDate>Mon, 27 Feb 2017 14:16:24 +0200</pubDate>
+      <pubDate>Mon, 27 Feb 2017 10:54:24 +0200</pubDate>
       <author>tomscott87@gmail.com (Tom Scott)</author>
       <guid>https://tscott0.github.io/post/hugo-repositories/</guid>
-      <description>&lt;p&gt;Now that I have the basic blog configured, I&amp;rsquo;d like to explain how I keep track of changes in git.&lt;/p&gt;
+      <description>&lt;p&gt;Now that I have the basic blog configured, I&amp;rsquo;d like to describe how it all lives in git.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;Hugo Quickstart Guide&lt;/a&gt;, while excellent, didn&amp;rsquo;t cover exactly what I wanted.
-Specifically, I wanted my blog to be hosted at &lt;a href=&#34;https://tscott0.github.io&#34;&gt;https://tscott0.github.io&lt;/a&gt; and not at &lt;a href=&#34;https://tscott0.github.io/blog&#34;&gt;https://tscott0.github.io/blog&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I now have three GitHub repositories for this blog.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/tscott0/blog&#34;&gt;https://github.com/tscott0/blog&lt;/a&gt; -
-The main repo.
-Holds the content of the blog.
-Posts and pages are created here.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/tscott0/tscott0.github.io&#34;&gt;https://github.com/tscott0/tscott0.github.io&lt;/a&gt; -
-The public repo.
-Holds the static site that Hugo generates.
-Content from this repo is served through GitHub pages.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/tscott0/beautifulhugo&#34;&gt;https://github.com/tscott0/beautifulhugo&lt;/a&gt; -
-The theme repo (&lt;em&gt;optional&lt;/em&gt;). A fork of the beautifulhugo Hugo theme.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&#34;step-11-generate-website&#34;&gt;Step 11. Generate website&lt;/h1&gt;
-
-&lt;p&gt;The guide first describes how to make changes to your &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f0f0&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #4070a0&#34;&gt;baseURL&lt;/span&gt; &lt;span style=&#34;color: #666666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #4070a0&#34;&gt;&amp;quot;https://&amp;lt;your GitHub username&amp;gt;.github.io/bookshelf/&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;This is perfect if you already have something on GitHub pages.
-Instead I wanted the root to be my blog and with that in mind I set &lt;code&gt;baseURL&lt;/code&gt; to a different value.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f0f0&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #4070a0&#34;&gt;baseURL&lt;/span&gt; &lt;span style=&#34;color: #666666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #4070a0&#34;&gt;&amp;quot;https://tscott0.github.io&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;We still want to generate the site using Hugo, so I ran the following command:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f0f0&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;hugo --theme&lt;span style=&#34;color: #666666&#34;&gt;=&lt;/span&gt;beautifulhugo
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;At this point the directory structure should look something like this:
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f0f0&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;$ tree -d blog/
-&lt;span style=&#34;background-color: #ffffcc&#34;&gt;blog/                           &lt;span style=&#34;color: #60a0b0; font-style: italic&#34;&gt;# The main repo&lt;/span&gt;
-&lt;/span&gt;├── archetypes
-├── content
-│   ├── page
-│   └── post
-├── data
-├── layouts
-&lt;span style=&#34;background-color: #ffffcc&#34;&gt;├── public                      &lt;span style=&#34;color: #60a0b0; font-style: italic&#34;&gt;# The site generated by hugo&lt;/span&gt;
-&lt;/span&gt;│   ├── css
-│   ├── img
-│   ├── js
-│   ├── page
-│   │   └── &lt;span style=&#34;color: #40a070&#34;&gt;1&lt;/span&gt;
-│   └── post
-│       ├── configuring-hugo
-│       └── hello-hugo
-├── static
-│   └── img
-└── themes
-&lt;span style=&#34;background-color: #ffffcc&#34;&gt;    └── beautifulhugo           &lt;span style=&#34;color: #60a0b0; font-style: italic&#34;&gt;# A fork of the beautifulhugo theme&lt;/span&gt;
-&lt;/span&gt;        ├── archetypes
-        ├── exampleSite
-        │   ├── content
-        │   │   ├── page
-        │   │   └── post
-        │   └── static
-        ├── images
-        ├── layouts
-        │   ├── _default
-        │   └── partials
-        └── static
-            ├── css
-            ├── img
-            └── js
-
-&lt;span style=&#34;color: #40a070&#34;&gt;33&lt;/span&gt; directories
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
-
-&lt;h1 id=&#34;step-12-deploy-bookshelf-on-github-pages&#34;&gt;Step 12. Deploy bookshelf on GitHub pages&lt;/h1&gt;
-
-&lt;h2 id=&#34;the-main-repo&#34;&gt;The main repo&lt;/h2&gt;
-
-&lt;p&gt;The first step is important regardless. We still need to create the main repo.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f0f0&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;$ git init
-$ &lt;span style=&#34;color: #007020&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color: #4070a0&#34;&gt;&amp;quot;/public/&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; .gitignore
-$ &lt;span style=&#34;color: #007020&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color: #4070a0&#34;&gt;&amp;quot;/themes/&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; .gitignore
-$ git add --all
-$ git commit -m &lt;span style=&#34;color: #4070a0&#34;&gt;&amp;quot;Initial commit&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Adding both the &lt;code&gt;/public/&lt;/code&gt; and &lt;code&gt;/themes/&lt;/code&gt; directories to the &lt;code&gt;.gitignore&lt;/code&gt; file will also ensure that we don&amp;rsquo;t commit the files generated by Hugo or any themes. Only the raw content like posts and static content, like images, will be included in this repo.&lt;/p&gt;
-
-&lt;p&gt;I was a little confused on reading this section for the first time because I didn&amp;rsquo;t immediately realise the change of repo from &amp;ldquo;main&amp;rdquo; to &amp;ldquo;public&amp;rdquo;.
-The Quickstart Guide leaves it for the reader to decide what to do with the &amp;ldquo;main&amp;rdquo; repo.
-If you want to keep this repo in GitHub, you&amp;rsquo;ll need to first create the repo through GitHub and then:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f0f0&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;$ git remote add origin git@github.com:&amp;lt;github-username&amp;gt;/&amp;lt;repo-name&amp;gt;.git
-$ git push origin master
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;NB&lt;/strong&gt; &lt;em&gt;You may need to force push (git push -f)&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;the-public-repo&#34;&gt;The public repo&lt;/h2&gt;
-
-&lt;p&gt;This is where we go off piste.
-Instead of creating a new repository named &lt;code&gt;bookshelf&lt;/code&gt; ours will be &lt;code&gt;&amp;lt;your GitHub username&amp;gt;.github.io&lt;/code&gt;.
-So what is going on here?
-There are two ways to deploy to GitHub pages:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Repostitories with a &lt;code&gt;gh-pages&lt;/code&gt; branch will be publicly available at &lt;code&gt;&amp;lt;your GitHub username&amp;gt;.github.io/&amp;lt;repo name&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;A repository named &lt;code&gt;&amp;lt;your GitHub username&amp;gt;.github.io&lt;/code&gt; will serve the &lt;code&gt;master&lt;/code&gt; branch at &lt;code&gt;&amp;lt;your GitHub username&amp;gt;.github.io&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I&amp;rsquo;m assuming that these two approaches are not mutually exclusive. We will see!&lt;/p&gt;
-
-&lt;p&gt;The steps to initialise the public repo are largely the same.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f0f0&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span style=&#34;color: #007020&#34;&gt;cd&lt;/span&gt; public
-$ git init
-$ git remote add origin git@github.com:&amp;lt;github-username&amp;gt;/&amp;lt;github-username&amp;gt;.github.io.git
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Well that isn&amp;rsquo;t very readable.
-In my case the origin was set with the command:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f0f0&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;$ git remote add origin git@github.com:tscott0/tscott0.github.io.git
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Then add, commit and push.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f0f0&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;$ git add --all
-$ git commit -m &lt;span style=&#34;color: #4070a0&#34;&gt;&amp;quot;blog added&amp;quot;&lt;/span&gt;
-$ git push -f origin master
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Your site should then be available at &lt;code&gt;https://&amp;lt;github-username&amp;gt;.github.io&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;and-one-more-thing&#34;&gt;And one more thing&lt;/h2&gt;
-
-&lt;p&gt;To ensure that your site is &lt;em&gt;only&lt;/em&gt; accessed over https you&amp;rsquo;ll need to tick the &lt;code&gt;Enforce HTTPS&lt;/code&gt; option under the &amp;ldquo;GitHub Pages&amp;rdquo; section of your repo settings.
-This will redirect users to &lt;code&gt;https&lt;/code&gt; using a &lt;code&gt;HTTP 301&lt;/code&gt; (moved permanently).&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -165,95 +30,7 @@ This will redirect users to &lt;code&gt;https&lt;/code&gt; using a &lt;code&gt;H
       <pubDate>Sat, 25 Feb 2017 14:07:20 +0000</pubDate>
       <author>tomscott87@gmail.com (Tom Scott)</author>
       <guid>https://tscott0.github.io/post/configuring-hugo/</guid>
-      <description>&lt;p&gt;I started following the excellent &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;Hugo Quickstart Guide&lt;/a&gt; and wanted to document the experience here. This will one in a series of short posts as I create this blog.&lt;/p&gt;
-
-&lt;p&gt;
-I&amp;rsquo;m looking for a blog that&amp;hellip;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;is lightweight,&lt;/li&gt;
-&lt;li&gt;works well on mobile,&lt;/li&gt;
-&lt;li&gt;is easy to maintain, and&lt;/li&gt;
-&lt;li&gt;provides good support for code blocks.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;syntax-highlighting&#34;&gt;Syntax highlighting&lt;/h1&gt;
-
-&lt;p&gt;In order to show exactly how I&amp;rsquo;m building this blog, I&amp;rsquo;ll need a way to show some code. Hugo is very easy to get up and running but I want to show the content of config files and some raw Markdown. In future I&amp;rsquo;ll want to write about Go too.&lt;/p&gt;
-
-&lt;p&gt;Fortunately, Hugo makes syntax highlighting a breeze. There are two approaches, documented &lt;a href=&#34;https://gohugo.io/extras/highlighting/&#34;&gt;here&lt;/a&gt;. I&amp;rsquo;m opting for a server-side approach using &lt;a href=&#34;http://pygments.org&#34;&gt;Pygments&lt;/a&gt; in an attempt to keep the blog lightweight. Client-side syntax highlighters typically use Javascript and I want to avoid putting any stress on the browser.&lt;/p&gt;
-
-&lt;h2 id=&#34;installing-pygments&#34;&gt;Installing Pygments&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;Assuming Pip is installed&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f0f0&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;$ sudo pip install Pygments
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Check that &lt;code&gt;pygmentize&lt;/code&gt; is on the path (&lt;code&gt;Ctrl-C&lt;/code&gt; to exit)
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f0f0&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;$ pygmentize
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
-
-&lt;h2 id=&#34;configuring-pygments&#34;&gt;Configuring Pygments&lt;/h2&gt;
-
-&lt;p&gt;I added the following to my config.toml&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f0f0&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #60a0b0; font-style: italic&#34;&gt;# Use Pygments when using traditional code fences with ```&lt;/span&gt;
-&lt;span style=&#34;color: #4070a0&#34;&gt;PygmentsCodeFences&lt;/span&gt; &lt;span style=&#34;color: #666666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #4070a0&#34;&gt;true&lt;/span&gt;
-
-&lt;span style=&#34;color: #60a0b0; font-style: italic&#34;&gt;# The Pygments theme&lt;/span&gt;
-&lt;span style=&#34;color: #4070a0&#34;&gt;PygmentsStyle&lt;/span&gt; &lt;span style=&#34;color: #666666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #4070a0&#34;&gt;&amp;quot;friendly&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
-
-&lt;h3 id=&#34;css&#34;&gt;CSS&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f0f0&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #062873; font-weight: bold&#34;&gt;body&lt;/span&gt; {
-  &lt;span style=&#34;color: #007020; font-weight: bold&#34;&gt;font-family&lt;/span&gt;: &lt;span style=&#34;color: #4070a0&#34;&gt;&amp;quot;Noto Sans&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #007020; font-weight: bold&#34;&gt;sans-serif&lt;/span&gt;;
-}
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;go-with-line-numbers&#34;&gt;Go with line numbers&lt;/h3&gt;
-
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f0f0&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;1 &lt;/span&gt;&lt;span style=&#34;color: #007020; font-weight: bold&#34;&gt;func&lt;/span&gt; (b &lt;span style=&#34;color: #666666&#34;&gt;*&lt;/span&gt;Band) String() &lt;span style=&#34;color: #902000&#34;&gt;string&lt;/span&gt; {
-&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;2 &lt;/span&gt;	&lt;span style=&#34;color: #007020; font-weight: bold&#34;&gt;return&lt;/span&gt; fmt.Sprintf(&lt;span style=&#34;color: #4070a0&#34;&gt;&amp;quot;%v&amp;quot;&lt;/span&gt;, &lt;span style=&#34;color: #666666&#34;&gt;*&lt;/span&gt;b)
-&lt;span style=&#34;background-color: #f0f0f0; padding: 0 5px 0 5px&#34;&gt;3 &lt;/span&gt;}
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h3 id=&#34;markdown-with-line-3-highlighted&#34;&gt;Markdown with line 3 highlighted&lt;/h3&gt;
-
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f0f0&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #000080; font-weight: bold&#34;&gt;#&lt;/span&gt; How to ride a bike
-
-&lt;span style=&#34;background-color: #ffffcc&#34;&gt;&lt;span style=&#34;color: #007020; font-weight: bold&#34;&gt;-&lt;/span&gt; Get on top of the bike.
-&lt;/span&gt;&lt;span style=&#34;color: #007020; font-weight: bold&#34;&gt;-&lt;/span&gt; Put your feet on the pedal.
-&lt;span style=&#34;color: #007020; font-weight: bold&#34;&gt;-&lt;/span&gt; Make the pedal turn.
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h1 id=&#34;summaries&#34;&gt;Summaries&lt;/h1&gt;
-
-&lt;p&gt;I noticed very quickly that the &amp;ldquo;summary&amp;rdquo; of a post, the part that appears on the homepage for your blog, included a lot more of the content than I wanted. Summaries also don&amp;rsquo;t render the content as you might expect, formatting is often lost. Ideally I would be able to demarcate exactly where I wanted the summary to finish.&lt;/p&gt;
-
-&lt;p&gt;At first I tried using a horizontal rule to end the summary. In Markdown a horizontal line can be done with three dashes &lt;code&gt;---&lt;/code&gt;. This didn&amp;rsquo;t work so I decided to check the docs.&lt;/p&gt;
-
-&lt;p&gt;I learned a couple of important lessons from the &lt;a href=&#34;https://gohugo.io/content/summaries/&#34;&gt;Hugo docs&lt;/a&gt;:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;By default the summary will contain the first 70 characters of a post.&lt;/li&gt;
-&lt;li&gt;Inserting &lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt; into a post will allow me to manually define the split, just what I was looking for.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f0f0&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;This is the summary.
-&lt;span style=&#34;color: #60a0b0; font-style: italic&#34;&gt;&amp;lt;!--more--&amp;gt;&lt;/span&gt;
-This is the body of the post.
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h1 id=&#34;css-1&#34;&gt;CSS&lt;/h1&gt;
-
-&lt;p&gt;I decided to fork the &lt;a href=&#34;https://github.com/1138-4EB/beautifulhugo&#34;&gt;Beautiful Hugo theme&lt;/a&gt; so I could make minor tweaks to the CSS as I go. I&amp;rsquo;ve only made very minor changes so far, mainly to padding.&lt;/p&gt;
-
-&lt;p&gt;Once I&amp;rsquo;d created the fork on &lt;a href=&#34;https://github.com/tscott0/beautifulhugo&#34;&gt;GitHub&lt;/a&gt;, I then removed the original theme from the &lt;code&gt;/themes&lt;/code&gt; directory and checked out my own. Now I can make changes to CSS as I go.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I started following the excellent &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;Hugo Quickstart Guide&lt;/a&gt; and wanted to document the experience here. This will one in a series of short posts as I create this blog.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -262,8 +39,16 @@ This is the body of the post.
       <pubDate>Sat, 25 Feb 2017 13:51:09 +0000</pubDate>
       <author>tomscott87@gmail.com (Tom Scott)</author>
       <guid>https://tscott0.github.io/post/hello-hugo/</guid>
-      <description>&lt;p&gt;Playing with &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; and decided to start a blog. Nothing to see here, move along.&lt;/p&gt;
-</description>
+      <description>Playing with Hugo and decided to start a blog. Nothing to see here, move along.</description>
+    </item>
+    
+    <item>
+      <title>about me</title>
+      <link>https://tscott0.github.io/page/about/</link>
+      <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
+      <author>tomscott87@gmail.com (Tom Scott)</author>
+      <guid>https://tscott0.github.io/page/about/</guid>
+      <description>I&amp;rsquo;m a senior software engineer based in London.</description>
     </item>
     
   </channel>

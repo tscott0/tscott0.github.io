@@ -2,23 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on tscott0</title>
-    <link>https://tscott0.github.io/page/index.xml</link>
+    <link>https://tscott0.github.io/page/</link>
     <description>Recent content in Pages on tscott0</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <managingEditor>tomscott87@gmail.com (Tom Scott)</managingEditor>
     <webMaster>tomscott87@gmail.com (Tom Scott)</webMaster>
     <lastBuildDate>Fri, 11 Jul 2014 10:54:24 +0200</lastBuildDate>
-    <atom:link href="https://tscott0.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://tscott0.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
-      <title>About</title>
+      <title>about me</title>
       <link>https://tscott0.github.io/page/about/</link>
       <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
       <author>tomscott87@gmail.com (Tom Scott)</author>
       <guid>https://tscott0.github.io/page/about/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m a software developer based in London.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m a senior software engineer based in London.</description>
     </item>
     
   </channel>

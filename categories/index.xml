@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on tscott0</title>
+    <link>https://tscott0.github.io/categories/</link>
+    <description>Recent content in Categories on tscott0</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <managingEditor>tomscott87@gmail.com (Tom Scott)</managingEditor>
+    <webMaster>tomscott87@gmail.com (Tom Scott)</webMaster>
+    
+	<atom:link href="https://tscott0.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
