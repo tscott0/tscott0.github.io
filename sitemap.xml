@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://tscott0.github.io/post/elasticsearch-nested-datatype/</loc>
+    <lastmod>2018-10-31T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://tscott0.github.io/post/hugo-repositories/</loc>
     <lastmod>2017-02-27T10:54:24+02:00</lastmod>
   </url>
@@ -35,7 +40,7 @@
   
   <url>
     <loc>https://tscott0.github.io/post/</loc>
-    <lastmod>2017-02-27T10:54:24+02:00</lastmod>
+    <lastmod>2018-10-31T21:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -46,7 +51,7 @@
   
   <url>
     <loc>https://tscott0.github.io/</loc>
-    <lastmod>2017-02-27T10:54:24+02:00</lastmod>
+    <lastmod>2018-10-31T21:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

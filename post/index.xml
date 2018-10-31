@@ -8,10 +8,19 @@
     <language>en-gb</language>
     <managingEditor>tomscott87@gmail.com (Tom Scott)</managingEditor>
     <webMaster>tomscott87@gmail.com (Tom Scott)</webMaster>
-    <lastBuildDate>Mon, 27 Feb 2017 10:54:24 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 31 Oct 2018 21:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://tscott0.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nested datatypes in Elasticsearch</title>
+      <link>https://tscott0.github.io/post/elasticsearch-nested-datatype/</link>
+      <pubDate>Wed, 31 Oct 2018 21:00:00 +0000</pubDate>
+      <author>tomscott87@gmail.com (Tom Scott)</author>
+      <guid>https://tscott0.github.io/post/elasticsearch-nested-datatype/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hugo Repositories</title>
